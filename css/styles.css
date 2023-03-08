@@ -1,0 +1,1256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap');
+
+/* CSS VARIABLES: */
+:root {
+/* theme colors: */
+  --wht: #ffffff;
+  --blue: #054cff;
+  --red: #b5162e;
+  --purple: #7700d8;
+  --green: #029c28;
+  --gold: #e2ae00;
+  /* theme colors transparent backgrounds: */
+  --blue-bkgrd: #0030db66;
+  --red-bkgrd: #b6162e66;
+  --purple-bkgrd: #6000bf66;
+  --green-bkgrd: #029c2866;
+  --gold-bkgrd: #d48b0466;
+/* gray - transparent shades */
+  --trans-lt-gray: #bbbbbbcc;
+  --trans-med-gray: #767676cc;
+  --trans-drk-gray: #373737cc;
+  --trans-blk: #000000cc;
+/* gray - solid shades */
+  --wht-gray: #e9e9e9;
+  --lt-gray: #bbbbbb;
+  --med-gray: #767676;
+  --drk-gray: #373737;
+  --blk-gray: #131313;
+  --black: #000000;
+}
+/* RESPONSIVE TYPOGRAPHY: */
+/* @media screen and (min-width: 968px) {
+:root {
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+  --smaller-font-size: .813rem;
+  }
+} */
+
+/* ========== WEBSITE DEFAULTS ========== */
+
+* {
+  overscroll-behavior: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--blue);
+  color: var(--wht);
+}
+
+a {
+  text-decoration: none;
+  color: var(--wht);
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+    margin:0;
+    padding: 0;
+}
+
+/* ========== HEADER & NAVIGATION ========== */
+header {
+  background-color:var(--black);
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 7%;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2000;
+}
+
+header .page-logo {
+  position: relative;
+  top: -3px;
+}
+
+header img {
+  position: relative;
+  display: auto;
+  width: 23px;
+  height: 100%;
+  top: 6px;
+  margin-right: 1px;
+}
+
+header .page-logo .logo-fonts {
+  position: relative;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  align-items: inherit;
+  letter-spacing: 1px;
+}
+
+#triangle {
+  position: relative;
+  left: -6px;
+  font-size: 2.25rem;
+  color: var(--blue);
+  z-index: 250;
+}
+
+.page-logo a span {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  left: -15px;
+}
+
+.page-logo a:hover {
+  color: var(--med-gray);
+}
+
+#theme-btn {
+  width: 112px;
+  text-decoration: none;
+  background-color: var(--trans-drk-gray);
+  color: var(--wht);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 7px 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 1px solid var(--trans-med-gray);
+  transition: .2s ease-in-out;
+}
+
+#theme-btn:hover {
+  background-color: rgba(55, 55, 55, .4);
+  letter-spacing: .05rem;
+  border: 1px solid var(--trans-med-gray);
+}
+
+header .navbar a {
+  justify-content: space-between;
+  padding: 2.75rem 1.75rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: var(--wht-gray);
+  margin: 0;
+}
+
+header .navbar a:hover, header .navbar a.active {
+  background-color: rgba(55, 55, 55, .4);
+  letter-spacing: 1px;
+}
+
+header .icons .bx-menu {
+  position: relative;
+  cursor: pointer;
+  font-size: 2rem;
+  background-color: rgba(55, 55, 55, .5);
+  height: 2.5rem;
+  width: 3rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  color: var(--wht-gray);
+}
+
+header .icons .bx:hover {
+  background-color: var(--drk-gray);
+}
+
+header .icons #menu-bars {
+  display: none;
+}
+
+/* ========== SECTION ONE ========== */
+
+.theme-photo img {
+  width: 100%;
+  position: relative;
+  margin: 0 auto 0 auto;
+  object-fit:fill;
+  overflow: hidden;
+  top: 2px;
+  z-index: -500;
+}
+
+.heading-content {
+  position: absolute;
+  max-width: 75%;
+  height: auto;
+  top: 100px;
+  margin-left: 80px;
+  z-index: 500;
+}
+
+.heading-content h1 {
+  font-family: 'Playfair Display SC', serif;
+  color: var(--wht);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 8.25rem;
+}
+
+#large-triangle {
+  left: -2px;
+  color: var(--blue);
+  position: relative;
+  top: -9px;
+  font-size: 8rem;
+  z-index: 200;
+}
+
+.heading-content h1 span {
+  position: relative;
+  left: -19px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: var(--wht);
+}
+
+.heading-content p {
+  color: var(--wht);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 100;
+  line-height: 4rem;
+  margin-top: .25rem;
+  margin-bottom: 2rem;
+}
+
+#buttons {
+  display: flex;
+  max-width: 50%;
+}
+
+.buttons #binge-btn {
+  width: 140px;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .6);
+  background-color: var(--blue);
+  color: var(--wht);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: .1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  transition: .2s ease-in-out;
+}
+
+#binge-btn:hover, #binge-btn:focus {
+  transform: scale(1.06);
+  padding: 10px 18px;
+}
+
+/* ========== SECTION TWO ========== */
+
+#highlights {
+  position: relative;
+  background: rgba(0, 0, 0, .6);
+  text-align: center;
+  z-index: 1500;
+}
+
+#hi-contents {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: 85%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+#binge-worthy {
+  font-size: 2.60rem;
+  color: var(--blue);
+}
+
+#hi-contents h1 {
+  margin: auto;
+  width: 90%;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 2.40rem;
+  color: var(--wht);
+  padding-bottom: 55px;
+  line-height: 5rem;
+}
+
+#hi-contents p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--wht);
+  line-height: 2.25rem;
+  text-align: center;
+}
+
+#hi-contents #section-two {
+  position: relative;
+  width: auto;
+  text-transform: uppercase;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 10.5rem;
+  color: var(--wht);
+  font-weight: 500;
+  opacity: 65%;
+}
+
+h1 #gallery-triangle{
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  left: -7px;
+  color: var(--blue);
+  top: -9px;
+  font-size: 11rem;
+  z-index: 500;
+}
+
+#section-two #bold-binge {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10.5rem;
+  margin-left: -30px;
+  text-transform: uppercase;
+  color: var(--wht);
+  opacity: 100%;
+}
+
+#hi-contents .gallery-text {
+  margin: auto;
+  font-size: 1.25rem;
+  font-weight: 100;
+  margin-top: 5px;
+  margin-bottom: 35px;
+  width: 95%;
+  line-height: 4.5rem;
+  opacity: 65%;
+}
+
+#white-mercedes-logo {
+  position: relative;
+  width: 45px;
+  height: auto;
+  margin: 15px auto 35px auto;
+  opacity: 20%;
+}
+
+#gallery {
+  display: flex;
+  padding: 30px 0 10px 0;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: center;
+}
+
+.gallery-photo {
+  padding: 4px 6px;
+}
+
+.gallery-photo img {
+  height: 130px;
+  width: 140px;
+  opacity: 70%;
+  object-fit: cover;
+  border: 1px solid var(--trans-drk-gray);
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.gallery-photo img:hover {
+  transform: scale(1.03);
+  filter: grayscale(0%);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, .5);
+  opacity: 100%;
+}
+
+/* ========== SECTION TWO ========== */
+#footer-content {
+  height: 475px;
+  margin: auto;
+  color: #dadada;
+}
+
+#footer-content {
+  background-image: url("/img-02/car-pics/footer-pic2.jpg");
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#footer-content {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 60px 0;
+  width: 100%;
+  flex: row;
+}
+
+.footer-col-1 a {
+  background-color: transparent;
+}
+
+.footer-col-1 img {
+  width: 75px;
+  padding-top: 15px;
+  transition: .3s ease-in-out;
+}
+
+.footer-col-1 img:hover {
+  transform: translateY(-5px) scale(1.2);
+}
+
+.footer-col-1 h3 {
+  color: var(--lt-gray);
+  margin: 15px 0 8px 0;
+  font-size: 1.75rem;
+}
+
+.offers {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--lt-gray)
+}
+
+.footer-col-2 h3 {
+  color: var(--lt-gray);
+  display: inline-block;
+  font-size: 1.75rem;
+  margin: 25px 0 8px 0;
+}
+
+.footer-col-2 a {
+  text-decoration: none;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.footer-col-2 a:focus {
+  background-color: transparent;
+}
+
+.footer-col-2 .social-media {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 58%;
+  text-decoration: none;
+}
+
+.footer-col-2 .bx {
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--blue);
+  margin: 10px 12px;
+  transition: .2s ease-in;
+}
+
+.footer-col-2 .bx:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+
+#copyright {
+  margin-bottom: 300px;
+  font-size: 1.4rem;
+  padding-top: 30px;
+  letter-spacing: 2px;
+  color: var(--med-gray);
+}
+
+#copyright p {
+  padding-bottom: 12px;
+}
+
+#copyright .link-span {
+  color: var(--med-gray);
+  letter-spacing: 0;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+#copyright a {
+  font-weight: 400;
+}
+
+#copyright .contact-link {
+  letter-spacing: 2px;
+  color: var(--trans-lt-gray);
+}
+
+#copyright a:hover {
+  color: var(--med-gray);
+}
+
+p .concept-span {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+
+/* ========================= MEDIA QUERIES ========================= */
+
+
+/* ========== 768 ========== */
+@media (max-width: 768px) {
+
+#header {
+  position: fixed;
+}
+  
+header .icons #menu-bars {
+  display: inline-block;
+  }
+
+header .navbar {
+  position: absolute;
+  top: 99%;
+  left: 0;
+  right: 0;
+  background-color: rgb(17, 17, 17);
+  opacity: 100%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: .4s ease-in-out;
+  z-index: 1600;
+  }
+
+header .navbar.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+header .navbar a {
+  display: block;
+  font-size: 1.40rem;
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+  }
+
+header .navbar a:hover {
+  background-color: var(--black);
+  width: auto;
+  }
+
+#theme-btn {
+  width: 115px;
+  padding: 5px 12px;
+  }
+
+#theme-btn:hover {
+  letter-spacing: 0;
+  }
+
+/* ========== SECTION ONE ========== */
+
+#hero {
+  position: relative;
+  top: 1px;
+  }
+
+.heading-content {
+  top: 63px;
+  margin-left: 35px;
+  }
+
+.heading-content h1 {
+  font-size: 6.25rem;
+  }
+
+#hero #large-triangle {
+  left: -2px;
+  top: -7px;
+  font-size: 6rem;
+  }
+
+.heading-content h1 span {
+  font-weight: 900;
+  left: -12px;
+  }
+
+.heading-content p {
+  font-size: 1.40rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+  } 
+
+.buttons #binge-btn {
+  width: 135px;
+  padding: 10px 20px;
+  }
+
+#hi-contents {
+  padding: 65px auto 55px auto;
+  }
+
+#hi-contents h1 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 2.85rem;
+  line-height: 5rem;
+  }
+
+#binge-worthy {
+  font-size: 2.90rem;
+  color: var(--blue);
+  }
+
+#hi-contents #section-two {
+  font-size: 7rem;
+  }
+
+h1 #gallery-triangle{
+  left: -4px;
+  top: -5px;
+  font-size: 8rem;
+  }
+
+#section-two #bold-binge {
+  font-size: 7rem;
+  margin-left: -19px;
+  }
+
+#hi-contents .gallery-text {
+  font-size: 1.75rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 88%;
+  text-align: justify;
+  }
+
+#white-mercedes-logo {
+  width: 35px;
+  margin: 15px auto 20px auto;
+  }
+
+.footer-col-1 img {
+  width: 75px;
+  }
+
+.footer-col-1 img:hover {
+  transform: translateY(-4px) scale(1.1);
+  }
+
+.footer-col-1 h3 {
+  font-size: 2.25rem;
+  }
+
+.offers {
+  font-size: 1.75rem;
+  }
+
+.footer-col-2 h3 {
+  font-size: 2.25rem;
+  margin-bottom: 0;
+  }
+}
+
+
+/* ========== 769 ========== */
+
+@media (min-width: 769px) {
+
+  .page-logo {
+    margin-right: auto;
+  }
+}
+
+
+/* ========== 1200 ========== */
+
+@media (min-width: 1200px) {
+
+.page-logo {
+    margin-right: auto;
+    text-align: center;
+  }
+
+.heading-content {
+  top: 65px;
+  margin-left: 85px;
+  }
+
+#hi-contents h1 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 3.25rem;
+  line-height: 5rem;
+  }
+
+#binge-worthy {
+  font-size: 3.3rem;
+  color: var(--blue);
+  }
+
+#hi-contents #section-two {
+  font-size: 11rem;
+  }
+
+h1 #gallery-triangle{
+  left: -5px;
+  top: -14px;
+  font-size: 10rem;
+  }
+
+#section-two #bold-binge {
+  font-size: 11rem;
+  margin-left: -27px;
+  }
+
+#hi-contents .gallery-text {
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 90%;
+  text-align: justify;
+  line-height: 5.25rem;
+  }
+
+#white-mercedes-logo {
+  width: 35px;
+  margin: 25px auto 20px auto;
+  }
+}
+
+
+@media (min-width: 1824px) {
+
+.heading-content {
+  top: 100px;
+  margin-left: 125px;
+  }
+
+.heading-content h1 {
+  font-size: 12rem;
+  }
+
+#hero #large-triangle {
+  left: -6px;
+  top: -14px;
+  font-size: 12rem;
+  }
+
+.heading-content h1 span {
+  font-weight: 900;
+  left: -31px;
+  }
+
+.heading-content p {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 6rem;
+  margin-bottom: 4rem;
+  }
+  
+#hi-contents {
+  padding-top: 125px;
+  }
+
+#hi-contents h1 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 4rem;
+  line-height: 7.5rem;
+  }
+
+#binge-worthy {
+  font-size: 4.1rem;
+  color: var(--blue);
+  }
+
+#hi-contents #section-two {
+  margin: 55px auto 55px auto;
+  font-size: 17rem;
+  }
+
+h1 #gallery-triangle{
+  left: -10px;
+  top: -24px;
+  font-size: 15rem;
+  }
+
+#section-two #bold-binge {
+  font-size: 17rem;
+  margin-left: -43px;
+  }
+
+#hi-contents .gallery-text {
+  font-size: 2.75rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 40px;
+  width: 90%;
+  text-align: justify;
+  line-height: 7.25rem;
+  }
+
+#white-mercedes-logo {
+  width: 35px;
+  margin: 25px auto 50px auto;
+  }
+}
+
+
+/* ========== 335 ========== */
+@media (max-width: 335px) {
+
+html {
+  font-size: 40%;
+  }
+
+header {
+  position: fixed;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3.5em;
+  }
+
+header .page-logo {
+  top: -1px;
+  }
+
+header img {
+  width: 15px;
+  top: 4px;
+  }
+
+#triangle {
+  top: .1rem;
+  left: -5px;
+  font-size: 2.35rem;
+  }
+
+.page-logo a span {
+  left: -11px;
+  }
+
+#theme-btn {
+  width: 87px;
+  font-size: 1.2rem;
+  padding: 3px 2px;
+  font-weight: 400;
+  margin: 0;
+  }
+
+header .navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+header .navbar a {
+  font-size: 1.7rem;
+  margin: 0;
+  }
+
+header .icons .bx-menu {
+  top: 2px;
+  position: relative;
+  font-size: 2.75rem;;
+  }
+
+/* ========== SECTION ONE ========== */
+
+#hero {
+  position: relative;
+  top: -2px;
+  }
+
+.theme-photo img {
+  margin: 0;
+  top: 45px;
+  }
+  
+.heading-content {
+  top: 50px;
+  margin-left: 25px;
+  }
+
+.heading-content h1 {
+  position: relative;
+  font-weight: 400;
+  font-size: 4rem;
+  }
+
+#hero #large-triangle {
+  font-size: 5rem;
+  top: -1px;
+  left: -1px;
+  }
+
+.heading-content h1 span {
+  left: -7px;
+  }
+
+.heading-content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.25rem;
+  }
+
+.buttons #binge-btn {
+  width: 80px;
+  font-size: 1.25rem;
+  padding: 5px 10px;
+  }
+
+#highlights {
+  margin-top: 41px;
+  }
+
+#hi-contents {
+  padding: 30px 0;
+  }
+
+#binge-worthy {
+  font-size: 2.7rem;
+  }
+
+#hi-contents h1 {
+  font-size: 2.5rem;
+  padding-bottom: 25px;
+  line-height: 5rem;
+  }
+
+#hi-contents #section-two {
+  font-size: 5em;
+  }
+
+h1 #gallery-triangle{
+  left: -2px;
+  top: -2px;
+  font-size: 5.5rem;
+  z-index: 500;
+  }
+
+#section-two #bold-binge {
+  font-size: 5rem;
+  margin-left: -9px;
+  }
+
+#hi-contents .gallery-text {
+  width: 94%;
+  font-size: 2.25rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: 5rem;
+  }
+
+#white-mercedes-logo {
+  width: 30px;
+  margin: 8px auto 10px auto;
+  }
+
+#gallery {
+  padding: 20px 0 10px 0;
+}
+
+.gallery-photo img {
+  height: 100px;
+  width: 110px;
+  opacity: 100%;
+  }
+
+#footer-content {
+  padding: 60px 0;
+  }
+
+.footer-col-1 img {
+  width: 65px;
+  padding-top: 0;
+  }
+
+.footer-col-1 h3 {
+  margin: 15px 0 8px 0;
+  font-size: 3rem;
+    }
+
+.offers {
+  margin: auto;
+  width: 85%;
+  display: flex;
+  line-height: 3.5rem;
+  font-size: 2.5rem;
+  }
+
+.footer-col-2 h3 {
+  font-size: 3rem;
+  margin: 30px 0 8px 0;
+  }
+
+.footer-col-2 .social-media {
+  max-width: 65%;
+  }
+
+.footer-col-2 .bx {
+  font-size: 3.75rem;
+  }
+
+#copyright {
+  font-size: 1.75rem;
+  }
+
+#copyright p {
+  padding-bottom: 10px;
+  }
+
+#copyright .link-span {
+  font-size: 1.5rem;
+  }
+
+#copyright a {
+  font-weight: 400;
+  }
+
+p .concept-span {
+  font-size: 1.5rem;
+  }
+}
+
+
+/* ========== 250 ========== */
+@media (min-device-width: 250px) and (max-device-width: 334px) {
+
+html {
+  font-size: 35%;
+  }
+
+header {
+  position: fixed;
+  padding: 2rem 2.75rem;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+header .page-logo {
+  top: -2px;
+  }
+
+header img {
+  width: 15px;
+  top: 4px;
+  }
+
+#triangle {
+  top: -.1rem;
+  left: -4px;
+  font-size: 2.35rem;
+  }
+
+.page-logo a span {
+  left: -9px;
+  }
+
+#theme-btn {
+  position: relative;
+  width: 70px;
+  font-size: 1.2rem;
+  padding: 3px 0px;
+  font-weight: 400;
+  left: -4px;
+  top: 0px;
+  }
+
+header .icons .bx-menu {
+  position: relative;
+  font-size: 3rem;
+  background-color: rgba(55, 55, 55, .5);
+  height: 2.75rem;
+  width: 3.25rem;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  top: 1px;
+  }
+
+#menu-bars {
+  position: relative;
+  padding-top: .2rem;
+  }
+
+header .navbar {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+header .navbar a {
+  padding: 10px 0;
+  font-size: 1.8rem;
+  margin: 0;
+  }
+
+/* ========== SECTION ONE ========== */
+
+#hero {
+  position: relative;
+  top: -5px;
+  }
+
+.theme-photo img {
+  margin: 0;
+  top: 45px;
+  }
+  
+.heading-content {
+  top: 50px;
+  margin-left: 18px;
+  }
+
+.heading-content p {
+  display: none;
+  }
+
+.buttons #binge-btn {
+  margin-top: 5px;
+  }
+
+#highlights {
+  margin-top: 38px;
+  }
+
+#hi-contents {
+  padding: 20px 0;
+  width: 95%;
+  }
+
+#binge-worthy {
+  font-size: 2.2rem;
+  }
+
+#hi-contents h1 {
+  text-align: left;
+  font-weight: 300;
+  font-size: 2rem;
+  padding-bottom: 15px;
+  line-height: 4rem;
+  }
+
+#hi-contents #section-two {
+  text-align: center;
+  font-size: 4.5rem;
+  }
+
+h1 #gallery-triangle{
+  left: -1px;
+  top: -2px;
+  font-size: 4.75rem;
+  }
+
+#section-two #bold-binge {
+  font-size: 4.5rem;
+  margin-left: -6px;
+  }
+
+#hi-contents .gallery-text {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  line-height: 4.5rem;
+  text-align: left;
+  }
+
+#white-mercedes-logo {
+  width: 20px;
+  margin: 0;
+  }
+
+#gallery {
+  padding: 20px 0 10px 0;
+  width: auto;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  }
+
+.gallery-photo img {
+  height: 90px;
+  width: 100px;
+  opacity: 100%;
+  }
+
+#footer-content {
+  padding: 45px 0;
+  }
+
+.footer-col-1 img {
+  width: 50px;
+  padding-top: 0;
+  }
+
+#copyright {
+  margin: auto;
+  display: block;
+  font-size: 2rem;
+  width: 80%;
+  }
+
+#copyright p {
+  padding-top: 0;
+  margin-bottom: 8px;
+  }
+
+#copyright .link-span {
+  font-size: 1.75rem;
+  }
+
+#copyright a {
+  font-weight: 400;
+  }
+
+p .concept-span {
+  font-size: 1.75rem;
+  }
+}
+
+
+
+
+
