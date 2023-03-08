@@ -1,2 +1,2 @@
-#mercedes-binge-app
+# mercedes-binge-app
 A Mercedes Benz gallery app
