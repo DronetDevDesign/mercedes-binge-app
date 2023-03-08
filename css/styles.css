@@ -408,7 +408,7 @@ h1 #gallery-triangle{
 }
 
 #footer-content {
-  background-image: url("/images/car-pics/footer-pic2.jpg");
+  background-image: url("../images/car-pics/footer-pic2.jpg");
   object-fit: cover;
   background-color: black;
   background-position: center;
