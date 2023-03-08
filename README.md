@@ -3,7 +3,7 @@
 
 ## Purpose:
 
-Welcome to the Mercedes Binge gallery app where users can view binge-worthy photographs of beautiful Mercedes Benz automobiles. This app has a special `CHANGE COLOR` button in the top navigation bar
+Welcome to the Mercedes Binge gallery app where users can view binge-worthy photographs of beautiful Mercedes Benz automobiles. This app has a special `CHANGE COLOR` button in the navigation bar that will change the websites color theme including the main landing page photo! The links in the navbar also include links to the Mercedes Benz official site in case you get the urge to buy one of these beauties for yourself. Enjoy the site!
 
 ## Deployed Website Link:
 
@@ -21,7 +21,7 @@ Welcome to the Mercedes Binge gallery app where users can view binge-worthy phot
 
 <br>
 <div align="left">
-    <img src="./src/assets/dronetdevdesign-website-screenshot.jpg" width="800px" /> 
+    <img src="images/mercedes-binge-app-screenshot.jpg" width="800px" /> 
 </div>
 <br>
 
@@ -29,10 +29,13 @@ Welcome to the Mercedes Binge gallery app where users can view binge-worthy phot
 
 ## This Full-stack App Was Created Using:
 
+- JavaScript
+- NodeJS
+- UnSplash API
 - HTML 
 - CSS
-- JavaScript
-- React
+- FontAwesome
+- Boxicons
 - GitHub
 
 <br>
@@ -70,6 +73,6 @@ Welcome to the Mercedes Binge gallery app where users can view binge-worthy phot
 ### If you have any questions here's how to contact me:
 
 - Username: DronetDevDesign
-- Repository: https://github.com/DronetDevDesign
+- Repository: https://github.com/DronetDevDesign/mercedes-binge-app
 - Email: ron@DronetDevDesign.com
 
