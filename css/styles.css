@@ -29,18 +29,6 @@
   --blk-gray: #131313;
   --black: #000000;
 }
-/* RESPONSIVE TYPOGRAPHY: */
-/* @media screen and (min-width: 968px) {
-:root {
-  --biggest-font-size: 2.5rem;
-  --h1-font-size: 2.25rem;
-  --h2-font-size: 1.5rem;
-  --h3-font-size: 1.25rem;
-  --normal-font-size: 1rem;
-  --small-font-size: .875rem;
-  --smaller-font-size: .813rem;
-  }
-} */
 
 /* ========== WEBSITE DEFAULTS ========== */
 
@@ -83,16 +71,18 @@ p {
 }
 
 /* ========== HEADER & NAVIGATION ========== */
+
 header {
   background-color: black;
   position: fixed;
   display: flex;
+  margin: auto;
   top: 0;
   left: 0;
   right: 0;
-  padding: 2rem 7%;
+  padding: 2rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   z-index: 2000;
 }
 
@@ -159,6 +149,10 @@ header .page-logo .logo-fonts {
   background-color: rgba(55, 55, 55, .4);
   letter-spacing: .05rem;
   border: 1px solid var(--trans-med-gray);
+}
+
+.navbar {
+  justify-content: right;
 }
 
 header .navbar a {
@@ -332,7 +326,7 @@ header .icons #menu-bars {
   opacity: 65%;
 }
 
-h1 #gallery-triangle{
+h1 #gallery-triangle {
   position: relative;
   font-family: 'Roboto', sans-serif;
   left: -7px;
@@ -383,8 +377,8 @@ section .gallery {
 }
 
 .gallery-img {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   margin: 10px;
   border-radius: 3px;
@@ -411,7 +405,7 @@ section .gallery {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 47%;
     max-width: 800px;
     height: auto;
     border-radius: 4px;
@@ -424,6 +418,7 @@ section .gallery {
     overflow: hidden;
     z-index: 5000;
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
 }
 
 .img-popup.hide {
@@ -500,7 +495,7 @@ section .gallery {
     background: none;
     border: none;
     top: 50%;
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: 100;
     color: #cacaca;
     transform: translateY(-50%);
@@ -510,10 +505,12 @@ section .gallery {
 .pre-btn {
     left: 20px;
     transform: rotate(180deg);
+    text-shadow: -1px -1px 6px rgba(0, 0, 0, 0.6);
 }
 
 .nxt-btn {
     right: 20px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
 }
 
 button a {
@@ -537,35 +534,6 @@ button a {
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid #cacaca;
 }
-
-/* #gallery {
-  display: flex;
-  padding: 30px 0 10px 0;
-  flex-wrap: wrap;
-  width: auto;
-  justify-content: center;
-}
-
-.gallery-photo {
-  padding: 4px 6px;
-}
-
-.gallery-photo img {
-  height: 130px;
-  width: 140px;
-  opacity: 70%;
-  object-fit: cover;
-  border: 1px solid var(--trans-drk-gray);
-  cursor: pointer;
-  transition: .2s ease-in-out;
-}
-
-.gallery-photo img:hover {
-  transform: scale(1.03);
-  filter: grayscale(0%);
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, .5);
-  opacity: 100%;
-} */
 
 /* ========== SECTION TWO ========== */
 #footer-content {
@@ -695,12 +663,144 @@ p .concept-span {
   font-size: 1.2rem;
 }
 
+/* MEDIA QUERY SCREEN SIZES
+======================== */
+/* 2000 */
+@media screen and (max-width: 2000px) {
+  #hi-contents .gallery-text {
+  font-size: 3rem;
+  margin-top: 5px;
+  margin-bottom: 35px;
+  width: 95%;
+  line-height: 6.5rem;
+  opacity: 65%;
+  }
 
-/* ========================= MEDIA QUERIES ========================= */
+.gallery-img {
+  width: 295px;
+  height: 295px;
+  margin: 20px;
+  }
+}
 
+/* 1200 */
+@media screen and (max-width: 1200px) {
+.page-logo {
+    margin-right: auto;
+    margin-left: 20px;
+  }
 
-/* ========== 768 ========== */
-@media (max-width: 768px) {
+#hi-contents h1 {
+  font-size: 3rem;
+  }
+
+#binge-worthy {
+  position: relative;
+  font-size: 3.3rem;
+  top: 1px;
+  }
+
+#hi-contents .gallery-text {
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  width: 866%;
+  text-align: justify;
+  line-height: 5.50rem;
+  }
+
+#white-mercedes-logo {
+  width: 45px;
+  margin: 25px auto 20px auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .heading-content {
+  margin-left: 50px;
+  }
+
+.heading-content h1 span {
+  font-weight: 900;
+  }
+
+.heading-content p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+
+/* GALLERY HEADING SECTION */
+#binge-worthy {
+  font-size: 2.60rem;
+  color: var(--blue);
+}
+
+#hi-contents h1 {
+  font-size: 2.40rem;
+}
+
+#hi-contents #section-two {
+  font-size: 9rem;
+}
+
+h1 #gallery-triangle {
+  font-size: 9rem;
+}
+
+#section-two #bold-binge {
+  font-size: 9rem;
+  margin-left: -24px;
+}
+
+#hi-contents .gallery-text {
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 90%;
+  line-height: 5rem;
+}
+
+#white-mercedes-logo {
+  position: relative;
+  width: 55px;
+  height: auto;
+  margin: 10px auto 35px auto;
+  opacity: 20%;
+}
+
+/* GALLERY SECTION */
+.gallery-img {
+  width: 235px;
+  height: 235px;
+}
+
+.large-img {
+  width: 75%;
+}
+
+.img-popup {
+    width: 47%;
+    max-width: 800px;
+    height: auto;
+}
+
+.pre-btn {
+    left: 15px;
+    transform: rotate(180deg);
+    text-shadow: -1px -1px 6px rgba(0, 0, 0, 0.6);
+  }
+
+.nxt-btn {
+    right: 15px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
 
 #header {
   position: fixed;
@@ -856,160 +956,24 @@ h1 #gallery-triangle{
   margin-bottom: 0;
   }
 }
-
-
-/* ========== 769 ========== */
-
-@media (min-width: 769px) {
-
-  .page-logo {
-    margin-right: auto;
-  }
 }
 
 
-/* ========== 1200 ========== */
 
-@media (min-width: 1200px) {
+/* @media screen and (max-width: 576px) {
 
-.page-logo {
-    margin-right: auto;
-    text-align: center;
-  }
-
-.heading-content {
-  top: 65px;
-  margin-left: 85px;
-  }
-
-#hi-contents h1 {
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  font-weight: 100;
-  font-size: 3.25rem;
-  line-height: 5rem;
-  }
-
-#binge-worthy {
-  font-size: 3.3rem;
-  color: var(--blue);
-  }
-
-#hi-contents #section-two {
-  font-size: 11rem;
-  }
-
-h1 #gallery-triangle{
-  left: -5px;
-  top: -14px;
-  font-size: 10rem;
-  }
-
-#section-two #bold-binge {
-  font-size: 11rem;
-  margin-left: -27px;
-  }
-
-#hi-contents .gallery-text {
-  font-size: 2.25rem;
-  font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 20px;
-  width: 90%;
-  text-align: justify;
-  line-height: 5.25rem;
-  }
-
-#white-mercedes-logo {
-  width: 35px;
-  margin: 25px auto 20px auto;
-  }
-}
+} */
 
 
-@media (min-width: 1824px) {
 
-.heading-content {
-  top: 100px;
-  margin-left: 125px;
-  }
+/* @media screen and (max-width: 430px) {
 
-.heading-content h1 {
-  font-size: 12rem;
-  }
-
-#hero #large-triangle {
-  left: -6px;
-  top: -14px;
-  font-size: 12rem;
-  }
-
-.heading-content h1 span {
-  font-weight: 900;
-  left: -31px;
-  }
-
-.heading-content p {
-  font-size: 4rem;
-  font-weight: 100;
-  line-height: 6rem;
-  margin-bottom: 4rem;
-  }
-  
-#hi-contents {
-  padding-top: 125px;
-  }
-
-#hi-contents h1 {
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  font-weight: 100;
-  font-size: 4rem;
-  line-height: 7.5rem;
-  }
-
-#binge-worthy {
-  font-size: 4.1rem;
-  color: var(--blue);
-  }
-
-#hi-contents #section-two {
-  margin: 55px auto 55px auto;
-  font-size: 17rem;
-  }
-
-h1 #gallery-triangle{
-  left: -10px;
-  top: -24px;
-  font-size: 15rem;
-  }
-
-#section-two #bold-binge {
-  font-size: 17rem;
-  margin-left: -43px;
-  }
-
-#hi-contents .gallery-text {
-  font-size: 2.75rem;
-  font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 40px;
-  width: 90%;
-  text-align: justify;
-  line-height: 7.25rem;
-  }
-
-#white-mercedes-logo {
-  width: 35px;
-  margin: 25px auto 50px auto;
-  }
-}
+} */
 
 
-/* ========== 335 ========== */
-@media (max-width: 335px) {
 
-html {
+@media screen and (max-width: 390px) {
+  html {
   font-size: 40%;
   }
 
@@ -1222,246 +1186,6 @@ p .concept-span {
   }
 }
 
-
-/* ========== 250 ========== */
-@media (min-device-width: 250px) and (max-device-width: 334px) {
-
-html {
-  font-size: 35%;
-  }
-
-header {
-  position: fixed;
-  padding: 2rem 2.75rem;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
-  }
-
-header .page-logo {
-  top: -2px;
-  }
-
-header img {
-  width: 15px;
-  top: 4px;
-  }
-
-#triangle {
-  top: -.1rem;
-  left: -4px;
-  font-size: 2.35rem;
-  }
-
-.page-logo a span {
-  left: -9px;
-  }
-
-#theme-btn {
-  position: relative;
-  width: 70px;
-  font-size: 1.2rem;
-  padding: 3px 0px;
-  font-weight: 400;
-  left: -4px;
-  top: 0px;
-  }
-
-header .icons .bx-menu {
-  position: relative;
-  font-size: 3rem;
-  background-color: rgba(55, 55, 55, .5);
-  height: 2.75rem;
-  width: 3.25rem;
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  top: 1px;
-  }
-
-#menu-bars {
-  position: relative;
-  padding-top: .2rem;
-  }
-
-header .navbar {
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-
-header .navbar a {
-  padding: 10px 0;
-  font-size: 1.8rem;
-  margin: 0;
-  }
-
-/* ========== SECTION ONE ========== */
-
-#hero {
-  position: relative;
-  top: -5px;
-  }
-
-.theme-photo img {
-  margin: 0;
-  top: 45px;
-  }
-  
-.heading-content {
-  top: 50px;
-  margin-left: 18px;
-  }
-
-.heading-content p {
-  display: none;
-  }
-
-.buttons #binge-btn {
-  margin-top: 5px;
-  }
-
-#highlights {
-  margin-top: 38px;
-  }
-
-#hi-contents {
-  padding: 20px 0;
-  width: 95%;
-  }
-
-#binge-worthy {
-  font-size: 2.2rem;
-  }
-
-#hi-contents h1 {
-  text-align: left;
-  font-weight: 300;
-  font-size: 2rem;
-  padding-bottom: 15px;
-  line-height: 4rem;
-  }
-
-#hi-contents #section-two {
-  text-align: center;
-  font-size: 4.5rem;
-  }
-
-h1 #gallery-triangle{
-  left: -1px;
-  top: -2px;
-  font-size: 4.75rem;
-  }
-
-#section-two #bold-binge {
-  font-size: 4.5rem;
-  margin-left: -6px;
-  }
-
-#hi-contents .gallery-text {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  line-height: 4.5rem;
-  text-align: left;
-  }
-
-#white-mercedes-logo {
-  width: 20px;
-  margin: 0;
-  }
-
-#gallery {
-  padding: 20px 0 10px 0;
-  width: auto;
-  margin: auto;
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  }
-
-.gallery-photo img {
-  height: 90px;
-  width: 100px;
-  opacity: 100%;
-  }
-
-#footer-content {
-  padding: 45px 0;
-  }
-
-.footer-col-1 img {
-  width: 50px;
-  padding-top: 0;
-  }
-
-#copyright {
-  margin: auto;
-  display: block;
-  font-size: 2rem;
-  width: 80%;
-  }
-
-#copyright p {
-  padding-top: 0;
-  margin-bottom: 8px;
-  }
-
-#copyright .link-span {
-  font-size: 1.75rem;
-  }
-
-#copyright a {
-  font-weight: 400;
-  }
-
-p .concept-span {
-  font-size: 1.75rem;
-  }
-}
-
-
-/* MEDIA QUERY SCREEN SIZES
-======================== */
-
-
-/* @media screen and (max-width: 2000px) {
-
-} */
-
-
-
-/* @media screen and (max-width: 1200px) {
-
-} */
-
-
-
-/* @media screen and (max-width: 992px) {
-
-} */
-
-
-
-/* @media screen and (max-width: 768px) {
-
-} */
-
-
-
-/* @media screen and (max-width: 576px) {
-
-} */
-
-
-
-/* @media screen and (max-width: 430px) {
-
-} */
-
-
-
-/* @media screen and (max-width: 390px) {
-
-} */
 
 
 
