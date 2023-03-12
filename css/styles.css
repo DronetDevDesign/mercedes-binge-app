@@ -1141,6 +1141,7 @@ header {
 
   #hi-contents {
     padding-bottom: 0;
+    justify-content: center;
   }
 
   .large-img {
@@ -1153,7 +1154,12 @@ header {
 .img-popup {
     width: 385px;
     height: auto;
+    position: absoloute;
     margin: auto;
+    left: 45%;
+    right: 50%;
+    top: 50%;
+    bottom: 50;
 }
 
 .pre-btn {
