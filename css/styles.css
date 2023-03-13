@@ -248,11 +248,9 @@ header .icons #menu-bars {
 
 #buttons {
   display: flex;
-  max-width: 50%;
 }
 
 .buttons #binge-btn a {
-  width: 140px;
   text-decoration: none;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, .6);
   background-color: var(--blue);
@@ -1309,6 +1307,24 @@ header .navbar.active {
 .heading-content h1 span {
   left: -8px;
   font-weight: 700;
+}
+
+#binge-btn {
+  padding: 0;
+}
+
+.buttons #binge-btn a {
+  font-size: 1rem;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: 1px solid var(--blue);
+  transition: .2s ease-in-out;
+}
+
+.buttons #binge-btn a:hover {
+  font-size: 1rem;
+  padding: 6px 12px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 }
 
   #hi-contents {
