@@ -1122,270 +1122,268 @@ h1 #gallery-triangle {
 }
 
 @media screen and (max-width: 430px) {
-body {
+/* body {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  /* overflow-x: hidden;  */
-}
+  overflow-x: hidden; 
+} */
 
 header {
-  position: fixed;
-  text-align: center;
-  align-items: center;
+  padding: 0;
   justify-content: space-between;
-  padding: 2rem 3.5em;
-  z-index: 5000;
-  }
-
-  #hi-contents {
-    padding-bottom: 0;
-    justify-content: center;
-  }
-
-  .large-img {
-   max-height: 400px;
-   width: 300px;
-   object-fit: contain;
-   border-radius: 5px;
+  height: 20px;
+  /* border: 2px solid red; */
 }
-
-.img-popup {
-    width: 385px;
-    height: auto;
-    position: absoloute;
-    margin: auto;
-    left: 45%;
-    right: 50%;
-    top: 50%;
-    bottom: 50;
-}
-
-.pre-btn {
-    left: 18px;
-    transform: rotate(180deg);
-    text-shadow: 0px 0px 5px rgb(0, 0, 0);
-  }
-
-.nxt-btn {
-    right: 18px;
-    text-shadow: 0px 0px 5px rgb(0, 0, 0);
-  }
-}
-
-@media screen and (max-width: 390px) {
-  html {
-  font-size: 40%;
-  }
-
-header {
-  position: fixed;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 3.5em;
-  z-index: 5000;
-  }
 
 header .page-logo {
-  top: -1px;
-  }
-
-header img {
-  width: 15px;
-  top: 4px;
-  }
-
-#triangle {
-  top: .1rem;
-  left: -5px;
-  font-size: 2.35rem;
-  }
-
-.page-logo a span {
-  left: -11px;
-  }
-
-#theme-btn {
-  width: 87px;
-  font-size: 1.2rem;
-  padding: 3px 2px;
-  font-weight: 400;
   margin: 0;
-  }
-
-header .navbar {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 20px;
 }
 
-header .navbar a {
-  font-size: 1.7rem;
-  margin: 0;
-  }
-
-header .icons .bx-menu {
-  top: 2px;
+#theme-btn {
   position: relative;
-  font-size: 2.75rem;;
-  }
+  margin-right: 10px;
+}
 
-/* ========== SECTION ONE ========== */
+#menu-bars {
+  padding: 0;
+}
 
-#hero {
-  position: relative;
-  top: -2px;
-  }
+header .navbar.active {
+  width: 100vw;
+  left: -2px;
+}
 
-.theme-photo img {
-  margin: 0;
-  top: 45px;
-  }
-  
 .heading-content {
-  top: 50px;
-  margin-left: 25px;
+  top: 55px;
+  margin-left: 19px;
   }
 
 .heading-content h1 {
-  position: relative;
-  font-weight: 400;
-  font-size: 4rem;
-  }
-
-#hero #large-triangle {
-  font-size: 5rem;
-  top: -1px;
-  left: -1px;
-  }
-
-.heading-content h1 span {
-  left: -7px;
-  }
-
-.heading-content p {
-  font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 2.25rem;
-  }
-
-.buttons #binge-btn {
-  width: 80px;
-  font-size: 1.25rem;
-  padding: 5px 10px;
-  }
-
-#highlights {
-  margin-top: 41px;
-  }
-
-#hi-contents {
-  padding: 30px 0;
-  }
-
-#binge-worthy {
-  font-size: 2.7rem;
-  }
-
-#hi-contents h1 {
-  font-size: 2.5rem;
-  padding-bottom: 25px;
-  line-height: 5rem;
-  }
-
-#hi-contents #section-two {
-  font-size: 5em;
-  }
-
-/* h1 #gallery-triangle{
-  left: -2px;
-  top: -2px;
-  font-size: 5.5rem;
-  z-index: 500;
-  } */
-
-#section-two #bold-binge {
-  font-size: 5rem;
-  margin-left: -9px;
-  }
-
-#hi-contents .gallery-text {
-  width: 94%;
-  font-size: 2.25rem;
-  margin-top: 0;
-  margin-bottom: 15px;
-  line-height: 5rem;
-  }
-
-#white-mercedes-logo {
-  width: 30px;
-  margin: 8px auto 10px auto;
-  }
-
-#gallery {
-  padding: 20px 0 10px 0;
-}
-
-.gallery-photo img {
-  height: 100px;
-  width: 110px;
-  opacity: 100%;
-  }
-
-#footer-content {
-  padding: 60px 0;
-  }
-
-.footer-col-1 img {
-  width: 65px;
-  padding-top: 0;
-  }
-
-.footer-col-1 h3 {
-  margin: 15px 0 8px 0;
-  font-size: 3rem;
-    }
-
-.offers {
-  margin: auto;
-  width: 85%;
-  display: flex;
-  line-height: 3.5rem;
-  font-size: 2.5rem;
-  }
-
-.footer-col-2 h3 {
-  font-size: 3rem;
-  margin: 30px 0 8px 0;
-  }
-
-.footer-col-2 .social-media {
-  max-width: 65%;
-  }
-
-.footer-col-2 .bx {
   font-size: 3.75rem;
   }
 
-#copyright {
-  font-size: 1.75rem;
-  }
+#hero #large-triangle {
+  left: -2px;
+  top: -4px;
+  font-size: 4rem;
+}
 
-#copyright p {
-  padding-bottom: 10px;
-  }
+.heading-content h1 span {
+  left: -10px;
+  font-weight: 700;
+}
 
-#copyright .link-span {
+.heading-content p {
+  display: none;
+}
+
+.buttons #binge-btn a {
+  color: white;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  padding: 6px 12px;
+}
+
+.buttons #binge-btn a:hover {
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  padding: 6px 12px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+#hi-contents {
+  position: relative;
+  padding-top: 35px;
+  text-align: center;
+}
+
+#binge-worthy {
+  font-size: 1.70rem;
+}
+
+#hi-contents h1 {
   font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 3rem;
+  padding-bottom: 30px;
+}
+
+#hi-contents #section-two {
+  font-size: 4.25rem;
+}
+
+#gallery-triangle.section-two-triangle {
+  position: relative;
+  font-size: 5rem;
+  top: -3px;
+  margin: 0;
+}
+
+#section-two #bold-binge {
+  font-size: 4.25rem;
+  margin-left: -14px;
+}
+
+#hi-contents .gallery-text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 15px;
+  width: 98%;
+  line-height: 3.2rem;
+}
+
+#white-mercedes-logo {
+  width: 45px;
+  height: auto;
+  padding-bottom: 0;
+  margin-top: 20px;
+  opacity: 20%;
+}
+
+/* GALLERY SECTION */
+.gallery-img {
+  width: 160px;
+  height: 160px;
+  margin: 10px;
+}
+
+.large-img {
+   max-height: 325px;
+   width: 325px;
+}
+
+.img-popup {
+  top: 58%;
+  width: 380px;
+  height: auto;
+  text-align: center;
+}
+
+.control-container {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.pre-btn {
+  /* top: 50%; */
+  left: 25px;
+  transform: rotate(180deg);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
   }
 
-#copyright a {
-  font-weight: 400;
+.nxt-btn {
+  top: 54%;
+  right: 25px;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
   }
 
-p .concept-span {
+.offers {
   font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--lt-gray)
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .heading-content {
+  top: 50px;
+  margin-left: 23px;
+  }
+
+.heading-content h1 {
+  font-size: 3rem;
+  }
+
+#hero #large-triangle {
+  left: -2px;
+  top: -1px;
+  font-size: 4rem;
+}
+
+.heading-content h1 span {
+  left: -8px;
+  font-weight: 700;
+}
+
+  #hi-contents {
+  padding-top: 40px;
+}
+
+#binge-worthy {
+  font-size: 1.60rem;
+}
+
+#hi-contents h1 {
+  font-size: 1.4rem;
+  line-height: 3.1rem;
+}
+
+#hi-contents #section-two {
+  font-size: 4rem;
+}
+
+#gallery-triangle.section-two-triangle {
+  position: relative;
+  font-size: 5rem;
+  top: -2px;
+  margin: 0;
+}
+
+#section-two #bold-binge {
+  font-size: 4rem;
+  margin-left: -14px;
+}
+
+#hi-contents .gallery-text {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 15px;
+  width: 100%;
+  line-height: 3.4rem;
+}
+
+.gallery-img {
+  width: 145px;
+  height: 145px;
+  margin: 10px;
+}
+
+.large-img {
+   max-height: 315px;
+   max-width: 280px;
+}
+
+.img-popup {
+  top: 58%;
+  width: 360px;
+  height: auto;
+  text-align: center;
+}
+
+.control-container {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.pre-btn {
+  /* top: 50%; */
+  left: 15px;
+  transform: rotate(180deg);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+  }
+
+.nxt-btn {
+  top: 54%;
+  right: 15px;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
   }
 }
 
