@@ -1348,7 +1348,7 @@ header .navbar.active {
 
 .heading-content h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   }
 
 #hero #large-triangle {
@@ -1364,8 +1364,8 @@ header .navbar.active {
 
 #binge-btn {
   background-color: rgba(0, 0, 0, .4);
-  font-size: 1rem;
-  padding: 5px 10px;
+  font-size: .75rem;
+  padding: 4px 8px;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, .3);
   transition: .2s ease-in-out;
