@@ -5,16 +5,15 @@
 
 Welcome to the Mercedes Binge gallery app where users can view binge-worthy photographs of beautiful Mercedes Benz automobiles. This app has a special `CHANGE COLOR` button in the navigation bar that will change the websites color theme including the main landing page photo! The links in the navbar also include links to the Mercedes Benz official site in case you get the urge to buy one of these beauties for yourself. Enjoy the site!
 
-## Deployed Website Link:
+<br>
 
+## Deployed Website Link:
 ## https://dronetdevdesign.github.io/mercedes-binge-app/
 
 <br>
 
 ## **Table of contents:**
 
-- [Installation](#installation)
-- [Start](#start)
 - [Usage](#usage)
 - [Contribute](#contribute)
 - [Questions](#questions)
@@ -25,34 +24,33 @@ Welcome to the Mercedes Binge gallery app where users can view binge-worthy phot
 </div>
 <br>
 
-<br>
+## Viewable Responsive Screen Sizes:
 
-## This Full-stack App Was Created Using:
-
-- JavaScript
-- NodeJS
-- UnSplash API
-- HTML 
-- CSS
-- FontAwesome
-- Boxicons
-- GitHub
+* Desktop: 2000px
+* Media Query Sizes:
+  - 1200px to 992px (Desktop - laptops)
+  - 768px (Laptop - tablets)
+  - 576px (Small devices)
+  - 430px (large cell phones)
+  - 390px (small cell phones)
 
 <br>
 
-## Installation:
-
-### To install all packages use this command in the the terminal:
-
-`npm i`
+## This App Was Created Using:
+  - JavaScript
+  - UnSplash API
+  - HTML 
+  - CSS
+  - FontAwesome
+  - Boxicons
+  - Git/GitHub
 
 <br>
 
-## Start:
-
-### To start use this command in the the terminal: 
-
-`npm start`
+## Graphic Software Used:
+  - Adobe Photoshop
+  - Adobe Illustrator
+  - Sketch
 
 <br>
 
