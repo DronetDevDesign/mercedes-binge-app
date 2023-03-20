@@ -13,7 +13,6 @@ Welcome to the Mercedes Binge gallery app where users can view binge-worthy phot
 <br>
 
 ## **Table of contents:**
-
 - [Usage](#usage)
 - [Contribute](#contribute)
 - [Questions](#questions)
